@@ -6,15 +6,12 @@
 
 ## 📌 1. Project Overview & Pitch
 
-<!-- ========================================================================= -->
-<!-- 🎯 [MY PART: Tu Khud Likhna]                                               -->
-<!-- Write 5 lines explaining: Problem, Solution, and Core MVP scope.          -->
-<!-- ========================================================================= -->
-<!-- YOUR 5 LINES GO HERE:
-- Problem:
-- Solution:
-- MVP:
--->
+### Core Pitch (5-Line Summary)
+- **Problem**: School administrative staff waste hours daily answering repetitive parent queries regarding fees, holiday dates, bus routes, and admission deadlines.
+- **Solution**: A multi-tenant RAG platform where schools upload circulars, and parents receive immediate, cited answers strictly grounded in their specific school's verified documents.
+- **MVP Scope**: Secure school admin portal for PDF uploads with processing status, asynchronous BullMQ worker for chunking/embedding into PostgreSQL (`pgvector`), and a tenant-isolated parent chat interface.
+- **Defenses & Guardrails**: Document relevance classification, prompt-injection defense inside uploaded PDFs, similarity threshold cutoff, and per-tenant rate/token limits.
+- **Core Stack**: NestJS (strict TypeScript), PostgreSQL + pgvector, Redis + BullMQ, Next.js (App Router), and Tailwind CSS.
 
 ---
 

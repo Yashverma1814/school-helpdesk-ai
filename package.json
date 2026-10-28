@@ -1,0 +1,28 @@
+{
+  "name": "school-helpdesk-ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Multi-tenant RAG SaaS where schools upload documents and parents get cited answers",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --prefix apps/api run start:dev",
+    "dev:web": "npm --prefix apps/web run dev",
+    "build:api": "npm --prefix apps/api run build",
+    "build:web": "npm --prefix apps/web run build",
+    "lint": "npm --prefix apps/api run lint && npm --prefix apps/web run lint",
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,json,md}\"",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "generate:pdfs": "node scripts/generate-pdfs.js"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.23.1",
+    "dotenv": "^18.0.9",
+    "ioredis": "^6.0.0",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.1",
+    "prettier": "^3.3.3"
+  }
+}
