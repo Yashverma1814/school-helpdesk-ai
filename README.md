@@ -192,9 +192,6 @@ npm install
   - [x] Monorepo structure (`apps/api`, `apps/web`)
   - [x] Docker compose with `pgvector/pgvector:pg16` & `redis:7-alpine`
   - [x] Synthetic documents created for Greenfield Public School & Oakridge Academy
-  - [ ] **[MY PART]** Architecture diagram drawn on paper
-  - [ ] **[MY PART]** Fill 5-line summary in README.md
-  - [ ] **[MY PART]** Test local psql / redis-cli connection
 - [ ] **Phase 1: Auth + Tenants (Sessions 3-4)**
 - [ ] **Phase 2: Upload + Queue (Sessions 5-7)**
 - [ ] **Phase 3: Ingestion (Sessions 8-10)**
